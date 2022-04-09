@@ -1,14 +1,14 @@
 package genericsclass;
 
-public class MaxFloat {
+public class MaxInt {
 
-	Float a;
-	Float b;
-	Float c;
+	Integer a;
+	Integer b;
+	Integer c;
 	 
 	 
 	 
-	      public MaxFloat(Float a , Float b , Float c) {
+	      public MaxInt(Integer a , Integer b , Integer c) {
 			// TODO Auto-generated constructor stub
 		      this.a=a;
 		      this.b=b;
@@ -29,12 +29,11 @@ public class MaxFloat {
 
 		    	System.out.println("MAXIMUM NUMBER IS : " +c);
 		    
-
-	        }
+                }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		MaxFloat maxnumber = new MaxFloat(1f ,2f ,3f );
+		MaxInt maxnumber = new MaxInt(4 , 5, 6);
 		
 		maxnumber.max();
       }
