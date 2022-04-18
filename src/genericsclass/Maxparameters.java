@@ -3,6 +3,7 @@ package genericsclass;
 public class Maxparameters  <T extends Comparable<T>> {
 
 	    T w,x,y,z;
+	    T value ;
 
 	    public Maxparameters(T w ,T x, T y, T z) {
 			// TODO Auto-generated constructor stub
@@ -13,17 +14,26 @@ public class Maxparameters  <T extends Comparable<T>> {
 	    }
 	    public  <T extends Comparable<T>> void max(T t1,T t2,T t3 ,T t4) {
 
+	    	
 	        if (x.compareTo(y)>0 && x.compareTo(z)>0 && x.compareTo(w )>0)
-	            System.out.println("MAXIMUM VALUE IS  : "+x);
+	            value = x ;
 
 	        else if (y.compareTo(x)>0 && y.compareTo(z)>0 && y.compareTo(w)>0)
-	            System.out.println("MAXIMUM VALUE IS : "+y);
+	        	value = y;
 
 	        else if (w.compareTo(x)>0 && w.compareTo(y)>0 && w.compareTo(z)>0)
-	            System.out.println("MAXIMUM VALUE IS  : "+w);
+	        	value = w;
 	            
 	        else  
-	        	System.out.println("MAXIMUM VALUE IS  : "+z);
+	        	value = z;
+	        
+	        Printmax();
+	    }
+	     
+	    public void Printmax()
+	    {
+	    	
+	    	System.out.println("MAXIMUM VALUE IS : "+value);
 	    }
 	   
 	    public static void main(String[] args) {
